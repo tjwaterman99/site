@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Build with Stony
         run: |
-          pip install stony<=1.0
+          pip install -r requirements.txt
           python -m stony build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
